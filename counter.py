@@ -33,7 +33,7 @@ def update_counter(file_name, reset=False):
 		f=open(file_name,'r') 
 		counter=load(f)
 		counter_new=counter+1
-		f.close
+		f.close()
 		f=open(file_name,'w')
 		dump(counter_new,f)
 		f.close()
